@@ -1,0 +1,8 @@
+.all{
+    display: flex;
+}
+.users{
+    display: flex;
+    flex-direction: column;
+    margin-left: 15px;
+}

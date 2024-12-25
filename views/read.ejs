@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/stylesheets/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <a href="/create">Home</a>
+    <h1>All users</h1>
+    <div class="all">
+        <% users.forEach(function(user){
+                %><div class="users">
+                    <div class="na"><%= user.name %></div>
+                    <div class="ema"><%= user.email %></div>
+                    <a href="/delete/<%= user._id%>">delete</a>
+                    <a href="/update/<%=user._id%>">Edit</a>
+                  </div>
+                <%
+             })
+        %>
+        
+        
+    </div>
+        
+</body>
+</html>
